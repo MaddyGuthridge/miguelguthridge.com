@@ -68,7 +68,9 @@ body {
 .header-image {
     position: absolute;
     z-index: -1;
-    width: 100%;
+    min-height: 10px;
+    width: 50rem;
+    min-width: 100%;
     top: -20%;
     /* height: max-content; */
 }
