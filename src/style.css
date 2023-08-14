@@ -1,3 +1,6 @@
+/**
+ * Dark/light mode
+ */
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: white;
@@ -24,6 +27,22 @@
 
         --gradient-fallback: rgb(255,126,241);
         --gradient: linear-gradient(146deg, rgba(255,126,241,1) 0%, rgba(214,71,255,1) 35%, rgba(100,154,255,1) 100%);
+    }
+}
+
+/**
+ * Responsiveness
+ */
+
+/* Larger screens */
+@media only screen and (min-width: 601px) {
+    :root {
+        --header-size: 10rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    :root {
+        --header-size: 4rem;
     }
 }
 
@@ -55,7 +74,7 @@ body {
 }
 
 .title {
-    font-size: 10rem;
+    font-size: var(--header-size);
     padding: 5% 5%;
     text-shadow: var(--heading-shadow);
 }
