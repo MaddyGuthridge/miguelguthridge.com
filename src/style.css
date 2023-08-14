@@ -1,9 +1,24 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+
+    --heading-shadow: rgba(86, 40, 107, 0.519) 5px 1px 5px;
+
+    --link-color: rgb(135, 48, 116);
+    --link-hover-color: rgb(183, 47, 154);
+
+    --gradient-fallback: rgb(224,0,199);
+    --gradient: linear-gradient(146deg, rgba(224,0,199,1) 0%, rgba(154,0,198,1) 35%, rgba(0,89,255,1) 100%);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .header-space {
@@ -26,7 +41,7 @@ body {
 .title {
     font-size: 10rem;
     padding: 5% 5%;
-    text-shadow: rgba(86, 40, 107, 0.519) 5px 1px 5px;
+    text-shadow: var(--heading-shadow);
 }
 
 main {
@@ -45,13 +60,13 @@ main {
 }
 
 .links > a {
-    color: rgb(135, 48, 116);
+    color: var(--link-color);
     text-decoration: none;
     margin: 1rem 2rem;
 }
 
 .links > a:hover {
-    color: rgb(183, 47, 154);
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
@@ -60,8 +75,8 @@ main {
  * https://unused-css.com/blog/css-rainbow-text/
  */
 em {
-    background-image: rgb(224,0,199);
-    background-image: linear-gradient(146deg, rgba(224,0,199,1) 0%, rgba(154,0,198,1) 35%, rgba(0,89,255,1) 100%);
+    background-image: var(--gradient-fallback);
+    background-image: var(--gradient);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
