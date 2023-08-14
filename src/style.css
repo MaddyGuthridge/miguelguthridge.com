@@ -44,11 +44,12 @@ main {
 }
 
 .links > a {
-    color: rgb(255, 0, 200);
+    color: rgb(135, 48, 116);
     text-decoration: none;
     margin: 1rem 2rem;
 }
 
 .links > a:hover {
-    text-decoration: dotted;
+    color: rgb(183, 47, 154);
+    text-decoration: underline;
 }
