@@ -54,13 +54,13 @@ body {
     font-size: 1.5rem;
     background-color: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .header-space {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
     max-height: 50%;
     /* object-fit: cover; */
 }
