@@ -3,6 +3,7 @@ body {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
 }
 
 .header-space {
@@ -52,4 +53,17 @@ main {
 .links > a:hover {
     color: rgb(183, 47, 154);
     text-decoration: underline;
+}
+
+/**
+ * Fancy gradient text
+ * https://unused-css.com/blog/css-rainbow-text/
+ */
+em {
+    background-image: rgb(224,0,199);
+    background-image: linear-gradient(146deg, rgba(224,0,199,1) 0%, rgba(154,0,198,1) 35%, rgba(0,89,255,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bolder;
 }
